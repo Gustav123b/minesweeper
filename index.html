@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="intro center">
+        <div class="intro-popup">
+            <div class="intro-options">
+                <h2>Select game settings</h2>
+                <div class="options-btn-container">
+                    <div class="option-btn" option-size="1">1</div>
+                    <div class="option-btn option-btn--active" option-size="2">2</div>
+                    <div class="option-btn" option-size="3">3</div>
+                    <div class="option-btn" option-size="4">4</div>
+                    <div class="option-btn" option-size="5">5</div>
+                </div>
+                <p class="option-result">Board size: <span option-result-size>10x10</span></p>
+                <p class="option-result">Mines: <span option-result-mines>12</span></p>
+            </div>
+            <div>
+                <div class="btn-start">Start</div>
+            </div>
+        </div>
+    </section>
+    <section class="game hide">
+        <div class="game-wrapper flex space-between">
+            <div class="game-info-container">
+                <h2 class="game-info">Total mines: <span data-total-mines></span></h2>
+                <h2 class="game-info">Flags used: <span data-flags>0</span></h2>
+                <div>
+                    <div class="btn-new-game base-btn">New game</div>
+                </div>
+            </div>
+            <div class="game-area">
+                <div class="board"></div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+    <div class="gameover-popup hide">
+        <h2>Game over..</h2>
+        <div class="base-btn btn-try-again">Try again</div>
+    </div>
+    <script src="Cell.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
